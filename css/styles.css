@@ -1,0 +1,66 @@
+:root{
+    /*Primary colors*/
+    --primary-color-dark: #31261A;
+    --primary-color-light: #FAF4EA;
+    --primary-color-green: #819B57;
+    /*Secondary colors*/
+    --secondary-color-dark: #A18268;
+    --secondary-color-light: #CFCFBC;
+    --secondary-color-green: #465929;
+}
+
+/* Base */
+body{
+    color: var(--primary-color-dark);
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Header */
+    /* nav->link також є в footer */
+    .link{
+        color:var(--primary-color-light);
+    }
+    .link:hover{
+        color: var(--primary-color-green);
+    }
+
+    /* Button */
+    .button{
+        background-color: var(--primary-color-green);
+        border: 2px solid var(--primary-color-green);
+        border-radius: 8px;
+        color: var(--primary-color-light);
+        cursor: pointer;
+    }
+    .button:hover{
+        background-color: transparent;
+        color: var(--secondary-color-green);
+    }
+
+/* Hero-section */
+.hero-title{
+    color: var(--primary-color-light);
+}
+.hero-title .accent{
+    color: var(--primary-color-green);
+}
+
+/* Tradition-section */
+.advantages-list{
+    background-color: var(--primary-color-green);
+    color: var(--primary-color-light);
+}
+.traditoin-section-accent{
+    color: var(--primary-color-green);
+}
+
+/* Chef-section */
+.chef-section-title .accent{
+    color: var(--secondary-color-green);
+}
+/* Format-section */
+/* Contact-section */
+/* Footer */
