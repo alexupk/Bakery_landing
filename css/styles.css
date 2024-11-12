@@ -7,11 +7,42 @@
     --secondary-color-dark: #A18268;
     --secondary-color-light: #CFCFBC;
     --secondary-color-green: #465929;
+    /* fonts */
+    --secondary-title-size: 64px;
 }
+
+/* fonts */
+/* .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+} */
+
 
 /* Base */
 body{
     color: var(--primary-color-dark);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 ul{
@@ -22,6 +53,7 @@ ul{
     /* nav->link також є в footer */
     .link{
         color:var(--primary-color-light);
+        text-decoration: none;
     }
     .link:hover{
         color: var(--primary-color-green);
@@ -43,24 +75,56 @@ ul{
 /* Hero-section */
 .hero-title{
     color: var(--primary-color-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
 }
 .hero-title .accent{
     color: var(--primary-color-green);
 }
 
 /* Tradition-section */
+.traditoin-section-title{
+    font-size: var(--secondary-title-size);
+}
 .advantages-list{
     background-color: var(--primary-color-green);
     color: var(--primary-color-light);
+    font-size: 20px;
 }
 .traditoin-section-accent{
     color: var(--primary-color-green);
+    font-weight: 600;
+}
+.traditoin-section-text .traditoin-section-accent{
+    text-transform: uppercase;
 }
 
 /* Chef-section */
+.chef-section-title{
+    font-size: var(--secondary-title-size);
+}
 .chef-section-title .accent{
     color: var(--secondary-color-green);
 }
+.chef-section-article-title{
+    font-size: 20px;
+}
 /* Format-section */
+.format-section-title{
+    font-size: var(--secondary-title-size);
+}
+.format-section-article-title{
+    font-size: 24px;
+}
 /* Contact-section */
+.contact-section-title{
+    font-size: var(--secondary-title-size);
+}
 /* Footer */
+.footer-adress{
+    font-size: 16px;
+}
+.footer-adress .footer-protected{
+    font-size: 14px;
+}
