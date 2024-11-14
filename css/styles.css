@@ -44,6 +44,9 @@
 }
 
 /* Base */
+*{
+    box-sizing: border-box;
+}
 body{
     color: var(--primary-color-dark);
     font-family: "Poppins", sans-serif;
@@ -51,14 +54,41 @@ body{
     font-weight: 400;
     line-height: 1.5;
     font-style: normal;
+    margin: 0;
 }
-
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+}
 address{
     font-style: normal;
 }
 
 ul{
     list-style-type: none;
+}
+
+.section{
+    padding: 48px 0;
+}
+
+/* схований контент */
+.visaully-hidden{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+        
+}
+
+/* контейнер, обмежання за ширіною та центрування */
+.container{
+    width: 100%;
+    /* 1240+2*24(padding) */
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 /* Header */
@@ -80,6 +110,7 @@ ul{
         color: var(--primary-color-light);
         cursor: pointer;
         font-weight: 600;
+        padding: 16px 32px;
     }
     .button:hover{
         background-color: transparent;
@@ -87,20 +118,28 @@ ul{
     }
 
 /* Hero-section */
+.hero-section{
+    padding: 272px 0;
+}
 .hero-title{
     color: var(--primary-color-light);
     text-align: center;
     font-size: 128px;
     font-weight: 900;
+    margin-bottom: 0;
 }
 .hero-title .accent{
     color: var(--primary-color-green);
 }
 
 /* Tradition-section */
+.traditoin-section{
+    padding-top: 96px;
+}
 .traditoin-section-title{
     font-size: var(--secondary-title-size);
     line-height: var(--secondary-line-height);
+    margin-bottom: 42px;
 }
 .advantages-list{
     background-color: var(--primary-color-green);
@@ -120,6 +159,7 @@ ul{
 .chef-section-title{
     font-size: var(--secondary-title-size);
     line-height: var(--secondary-line-height);
+    margin-bottom: 80px;
 }
 .chef-section-title .accent{
     color: var(--secondary-color-green);
@@ -127,11 +167,13 @@ ul{
 .chef-section-article-title{
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 16px;
 }
 /* Format-section */
 .format-section-title{
     font-size: var(--secondary-title-size);
     line-height: var(--secondary-line-height);
+    margin-bottom: 80px;
 }
 .format-section-article-title{
     font-size: 24px;
@@ -145,6 +187,7 @@ ul{
 .contact-section-title{
     font-size: var(--secondary-title-size);
     line-height: var(--secondary-line-height);
+    margin-bottom: 16px;
 }
 /* Footer */
 .address-link{
