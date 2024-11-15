@@ -15,20 +15,24 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="Логотип пекарні" />
-          </a>
-          <ul>
-            <li><a class="link" href="#traditoin-section">Наші традиції</a></li>
-            <li><a class="link" href="#chef-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#format-section">Формати</a></li>
-            <li><a class="link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="flex-header-container">
+          <nav class="flex-header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="Логотип пекарні" />
+            </a>
+            <ul class="flex-header-menu">
+              <li>
+                <a class="link" href="#traditoin-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chef-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#format-section">Формати</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
     <main>
@@ -39,37 +43,44 @@
           </h1>
         </div>
       </section>
-      <section class="section">
+      <section class="section advantages-section">
         <div class="container">
           <!-- Заголовок схований -->
           <h2 class="visaully-hidden">Наші переваги</h2>
           <!--  -->
           <ul class="advantages-list">
-            <li>Великий попит на ринку</li>
-            <li>Доступні за бюджетом формати</li>
-            <li>Досвідчена управлінська команда</li>
+            <li class="advantages-item">Великий попит на ринку</li>
+            <li class="advantages-item">Доступні за бюджетом формати</li>
+            <li class="advantages-item">Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
       <section class="section traditoin-section" id="traditoin-section">
         <div class="container">
-          <h2 class="traditoin-section-title">Новий формат традицій</h2>
-          <p class="traditoin-section-text">
-            <span class="traditoin-section-accent">shop bakery</span> — це
-            пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки
-            та натуральність інгредієнтів.
-          </p>
-          <p>
-            Ми працюємо як найвідоміші мережі —
-            <span class="traditoin-section-accent"
-              >5 хвилин і замовлення готове</span
-            >. А ще у наших пекарень стильний дизайн та висока якість
-            обслуговування!
-          </p>
-          <img
-            src="./images/baker_man.jpg"
-            alt="Фото пекаря за стойкою батонів з посмішкою"
-          />
+          <div class="flex-tradition-section-container">
+            <div class="flex-tradition-section-content">
+              <h2 class="traditoin-section-title">Новий формат традицій</h2>
+              <p class="traditoin-section-text">
+                <span class="traditoin-section-accent uppercase"
+                  >shop bakery</span
+                >
+                — це пекарня, яка взяла все найкраще, і зберегла смак
+                традиційної випічки та натуральність інгредієнтів.
+              </p>
+              <p class="traditoin-section-text limited">
+                Ми працюємо як найвідоміші мережі —
+                <span class="traditoin-section-accent"
+                  >5 хвилин і замовлення готове</span
+                >
+                А ще у наших пекарень стильний дизайн та висока якість
+                обслуговування!
+              </p>
+            </div>
+            <img
+              src="./images/baker_man.jpg"
+              alt="Фото пекаря за стойкою батонів з посмішкою"
+            />
+          </div>
         </div>
       </section>
       <section class="section" id="chef-section">
@@ -103,9 +114,9 @@
       <section class="section" id="format-section">
         <div class="container">
           <h2 class="format-section-title">Формати</h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="format-section-list">
+            <li class="formats-item">
+              <article class="format-section-article">
                 <h3 class="format-section-article-title" lang="en">Walrus</h3>
                 <div class="format-section-text">
                   <p>Площа: до 120 м2</p>
@@ -118,8 +129,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-section-article">
                 <h3 class="format-section-article-title" lang="en">
                   Horseshoe
                 </h3>
@@ -131,8 +142,8 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="formats-item">
+              <article class="format-section-article">
                 <h3 class="format-section-article-title" lang="en">
                   Handlebar
                 </h3>
@@ -162,7 +173,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <a href="./index.html">
           <img src="./images/logo.svg" alt="Логотип пекарні" />
