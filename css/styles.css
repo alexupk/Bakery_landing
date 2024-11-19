@@ -44,7 +44,9 @@
 }
 
 /* Base */
-*{
+*,
+*::after,
+*::before{
     box-sizing: border-box;
 }
 body{
@@ -59,6 +61,9 @@ body{
 }
 h1,h2,h3,h4,h5,h6,p{
     margin-top: 0;
+}
+a{
+    display: inline-block;
 }
 address{
     font-style: normal;
@@ -233,6 +238,18 @@ ul{
 .chef-section-title .accent{
     color: var(--secondary-color-green);
 }
+.chef-section-list{
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+}
+.chef-section-item{
+    flex-basis: calc((100% - 30px) / 2);
+}
+.chef-section-card{
+    display: flex;
+    gap: 30px;
+}
 .chef-photo{
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--primary-color-light),
@@ -243,12 +260,23 @@ ul{
     font-weight: 600;
     margin-bottom: 16px;
 }
+.chef-text p{
+    margin-bottom: 24px;
+}
+.chef-text p:last-child {
+    margin-bottom: 0;
+}
 /* Format-section */
 .format-section-title{
     font-size: var(--secondary-title-size);
     line-height: var(--secondary-line-height);
     margin-bottom: 80px;
     text-align: center;
+}
+.format-container{
+    display: flex;
+    gap: 32px;
+    align-items: center;
 }
 .format-section-article{
     height: 444px;
@@ -289,6 +317,7 @@ ul{
     padding: 0;
     cursor: pointer;
     fill: var(--primary-color-dark);
+    flex-shrink: 0;
 }
 .carousel-button:hover{
     background-color: var(--primary-color-dark);
@@ -296,28 +325,58 @@ ul{
 }
 
 /* Contact-section */
+.contact-section{
+    padding-bottom: 96px;
+}
+.contact-container{
+    display: flex;
+    gap: 32px;
+}
 .contact-section-title{
     font-size: var(--secondary-title-size);
     line-height: var(--secondary-line-height);
     margin-bottom: 16px;
 }
+.contact-map{
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
 /* Footer */
+.footer-container{
+    display: flex;
+    gap: 20px;
+}
+.footer-nav,
+.footer-adress{
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
 .footer{
     background-image: url("../images/footer-background.png");
     background-color: var(--primary-color-dark);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 32px;
 }
+.footer-logo,
+.footer-menu,
+.adress-list,
+.address-info
+{
+    flex-grow: 1;
+}
+
 .address-link{
     font-size: 16px;
     font-weight: 300;
     color: var(--primary-color-light);
     text-decoration: none;
 }
- .address-link:hover {
+.address-link:hover {
     color: var(--primary-color-green);
-    font-weight: 600;
 }
 .address-icon{
     fill: var(--primary-color-light);
