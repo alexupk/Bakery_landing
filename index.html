@@ -12,7 +12,7 @@
       rel="stylesheet"
     /> -->
     <!-- styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header class="header">
@@ -325,13 +325,12 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop">
-      <!-- is-hidden -->
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="on">
           <div class="form-field">
             <label class="form-label visaully-hidden" for="user-name"
               >Ім'я</label
@@ -342,6 +341,9 @@
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
+              required
+              minlength="2"
+              pattern="^[А-Я][а-я]+ [А-Я][а-я]+$"
             />
           </div>
           <div class="form-field">
@@ -354,6 +356,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              required
+              pattern="^\+380[- ]?\d{2}[- ]?\d{3}[- ]?\d{4}$"
             />
           </div>
           <div class="form-field">
@@ -366,6 +370,8 @@
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             />
           </div>
           <button class="button form-button" type="submit">
@@ -379,7 +385,7 @@
       </div>
     </div>
 
-    <!-- scropts -->
+    <!-- scripts -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
