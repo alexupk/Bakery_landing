@@ -1,79 +1,15 @@
 
 @import "./utils/fonts";
 @import "./utils/variables";
-/* Base */
+
 @import "./base";
 
-/* Header */
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 32px;
+@import "./components/links";
+@import "./components/buttons";
 
-    .flex-header-container {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
-}
+@import "./components/header";
+@import "./components/hero";
 
-.flex-header-nav {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.flex-header-menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-/* nav->link також є в footer */
-.link {
-    color: var(--primary-color-light);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.link:hover {
-    color: var(--primary-color-green);
-}
-
-/* Button */
-@import "./components/buttons.scss";
-
-/* Hero-section */
-.hero-section {
-    padding: 272px 0;
-    /* background */
-    background-image:
-        linear-gradient(102.76deg,
-            rgba(18, 18, 17, 0.78) 2.03%,
-            rgba(18, 18, 17, 0.6) 58.46%,
-            rgba(18, 18, 17, 0) 98.36%),
-        url(../images/bakery-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    /* background-attachment: fixed; */
-}
-
-.hero-title {
-    color: var(--primary-color-light);
-    text-align: center;
-    font-size: 128px;
-    font-weight: 900;
-    margin-bottom: 0;
-}
-
-.hero-title .accent {
-    color: var(--primary-color-green);
-}
 
 /* Advantages-section */
 .advantages-section {
@@ -214,9 +150,8 @@
 }
 
 .format-section-article {
+    position: relative;
     height: 444px;
-    border: 1px solid #31261A;
-    /* remove */
     border-radius: 16px;
     padding: 24px;
     background-image: linear-gradient(180deg,
@@ -224,15 +159,28 @@
             rgba(49, 38, 26, 0.71) 72.92%,
             var(--primary-color-dark) 100%);
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .format-section-article:hover {
     transform: scale(1.05);
 }
 
+.format-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .format-section-article-title {
     font-size: 24px;
     font-weight: 600;
+    color: var(--primary-color-light);
 }
 
 .format-section-list {
@@ -247,6 +195,7 @@
 .format-section-text {
     font-size: 14px;
     font-weight: 300;
+    color: var(--primary-color-light);
 }
 
 /* carousel */
