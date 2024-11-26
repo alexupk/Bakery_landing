@@ -4,25 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <!-- fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
-      rel="stylesheet"
-    /> -->
     <!-- styles -->
     <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="flex-header-container">
-          <nav class="flex-header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="./index.html">
               <img src="./images/logo.svg" alt="Логотип пекарні" />
             </a>
-            <ul class="flex-header-menu">
+            <ul class="header__menu">
               <li>
                 <a class="link" href="#traditoin-section">Наші традиції</a>
               </li>
@@ -40,8 +33,8 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            <span class="accent">Сучасна</span> пекарня
+          <h1 class="hero-section__title">
+            <span class="text-brend">Сучасна</span> пекарня
           </h1>
         </div>
       </section>
@@ -50,30 +43,34 @@
           <!-- Заголовок схований -->
           <h2 class="visaully-hidden">Наші переваги</h2>
           <!--  -->
-          <ul class="advantages-list">
-            <li class="advantages-item">Великий попит на ринку</li>
-            <li class="advantages-item">Доступні за бюджетом формати</li>
-            <li class="advantages-item">Досвідчена управлінська команда</li>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">Великий попит на ринку</li>
+            <li class="advantages-section__item">
+              Доступні за бюджетом формати
+            </li>
+            <li class="advantages-section__item">
+              Досвідчена управлінська команда
+            </li>
           </ul>
         </div>
       </section>
       <section class="section traditoin-section" id="traditoin-section">
         <div class="container">
-          <div class="flex-tradition-section-container">
-            <div class="flex-tradition-section-content">
-              <h2 class="traditoin-section-title">Новий формат традицій</h2>
-              <p class="traditoin-section-text">
-                <span class="traditoin-section-accent uppercase"
-                  >shop bakery</span
-                >
+          <div class="traditoin-section__container">
+            <div class="traditoin-section__content">
+              <h2 class="traditoin-section__title">Новий формат традицій</h2>
+              <p>
+                <span class="text-brend text-bold text-uppercase"
+                  >shop bakery
+                </span>
                 — це пекарня, яка взяла все найкраще, і зберегла смак
                 традиційної випічки та натуральність інгредієнтів.
               </p>
-              <p class="traditoin-section-text limited">
+              <p
+                class="traditoin-section__text traditoin-section__text--limited"
+              >
                 Ми працюємо як найвідоміші мережі —
-                <span class="traditoin-section-accent"
-                  >5 хвилин і замовлення готове</span
-                >
+                <span class="text-brend">5 хвилин і замовлення готове</span>
                 А ще у наших пекарень стильний дизайн та висока якість
                 обслуговування!
               </p>
