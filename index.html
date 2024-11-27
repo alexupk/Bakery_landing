@@ -24,9 +24,17 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="header__button button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
+          <button type="button" class="header__burger menu-btn-open">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close  menu-btn-close" type="button">Clouse</button>
+          </div>
         </div>
       </div>
     </header>
@@ -54,7 +62,7 @@
           </ul>
         </div>
       </section>
-      <section class="section traditoin-section" id="traditoin-section">
+      <!-- <section class="section traditoin-section" id="traditoin-section">
         <div class="container">
           <div class="traditoin-section__container">
             <div class="traditoin-section__content">
@@ -334,7 +342,7 @@
           </div>
         </address>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal -->
     <div class="backdrop is-hidden">
@@ -399,5 +407,6 @@
 
     <!-- scripts -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

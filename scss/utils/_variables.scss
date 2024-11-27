@@ -10,4 +10,11 @@
     /* fonts */
     --secondary-title-size: 64px;
     --secondary-line-height: 1.3;
+
+    
 }
+
+// брекпоінт (розміри) для адаптиву
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;

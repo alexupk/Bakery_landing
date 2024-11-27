@@ -14,8 +14,14 @@
     &__title {
         color: var(--primary-color-light);
         text-align: center;
-        font-size: 128px;
+        font-size: 67px;
         font-weight: 900;
+        line-height: 1;
         margin-bottom: 0;
+
+        @media screen and (min-width: $bp-tablet){
+            font-size: 128px;
+            line-height: 1.5;
+        }
     }
 }
